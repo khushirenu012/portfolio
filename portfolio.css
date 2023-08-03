@@ -1,0 +1,430 @@
+
+header{
+  background-color: white;
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+  
+}
+
+html {
+  scroll-behavior:smooth;
+}
+body {
+    margin: 0;
+    box-sizing: content-box;
+  }
+
+  nav {
+    color: black;
+    padding: 2px;
+    border: 2px wheat ;
+   
+ 
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+  
+  .logo-name {
+    font-size: 20px;
+    font-weight: bold;
+   
+
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color:rgb(84, 40, 227); 
+  }
+  
+
+  #home{
+    height: 100vh;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+
+
+.typewriter {
+  font-size: 20px;
+  border-right: 2px solid pink;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+  text-shadow: 0 0 1px rgb(84, 40, 227);
+  animation: typing 10s steps(90, end), blink-caret 0.2s step-end infinite;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  margin-top: 110px;
+}
+
+main {
+  margin: 0 auto;
+  padding: 4px;
+}
+
+
+.profile-image img {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  margin-left: 90px;
+  margin-top: 0;
+  box-shadow: 0 0 10px rgb(84, 40, 227);
+}
+
+
+.description {
+  font-size: large;
+  margin-left: 100px;
+  margin-right: 80px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.description h2 {
+  text-shadow: 0 0 10px rgb(84, 40, 227);
+  font-weight: bold;
+  margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.description p {
+  margin-bottom: 2rem;
+}
+.description p span{
+  color:blue;
+  
+}
+
+#col1,
+#col2,
+#col3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+#col1 span,
+#col2 span,
+#col3 span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#col2 span {
+  font-style: italic;
+}
+.resume {
+  text-align: center;
+}
+
+#resume-button {
+
+  font-size: 1.2rem;
+  margin-left: 650px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color:  rgb(84, 40, 227);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px skyblue;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#resume-button:hover {
+  background-color: #0a2456;
+  transform: scale(1.2);
+}
+
+  body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .social-icons {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.5);
+  }
+  .row1{
+    display: flex;
+    flex-direction: row;
+  }
+
+ #skills h1 , #certificates h1 , #contact h2{
+  font-size: 50px;
+  text-shadow: 0px 3px 6px #5428E3;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+#skills {
+
+  text-align: center;
+  height: 100vh;
+  padding: 50px;
+}
+
+
+.skills-container {
+  margin-top: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.skill {
+  width: 180px;
+  text-align: center; 
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  box-shadow:   0px 6px 6px purple;
+}
+
+.skill-bar {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: 1px black solid;
+  height: 6px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CSS for the sliding skill bars */
+.skill-bar {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: 1px black solid;
+  height: 3px;
+  width: 200px;
+  position: relative;
+  box-shadow:   0px 3px 6px purple;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: #5428E3;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes slideAnimation {
+  from {
+    width: 0;
+  }
+}
+
+/* Apply the animation to each skill bar based on data-level */
+.skill-bar[data-level="90%"] .skill-level {
+  animation: slideAnimation 2s forwards;
+}
+.skill-bar[data-level="85%"] .skill-level {
+  animation: slideAnimation 2s forwards;
+}
+
+.skill-bar[data-level="75%"] .skill-level {
+  animation: slideAnimation 2s forwards;
+}
+
+.skill-bar[data-level="70%"] .skill-level {
+  animation: slideAnimation 2s forwards;
+}
+
+.skill-bar[data-level="50%"] .skill-level {
+  animation: slideAnimation 2s forwards;
+}
+
+
+
+#certificates {
+  text-align: center;
+  padding: 50px;
+  margin-top: 30px;
+  height: 100vh;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.certificate img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow:   3px 3px 3 px purple;  
+}
+
+#contact{
+  height: 100vh;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.contact-form {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid gray;
+  box-shadow: 3 3 10px palegoldenrod;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+ #contact button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: darkblue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact  button:hover {
+  background-color:  blue;
+}
